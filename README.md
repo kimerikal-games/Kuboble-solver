@@ -4,16 +4,29 @@ This is a solver for the [Kuboble puzzle](kuboble.com).
 
 ## Usage
 
-The solver is implemented in `kuboble.py`. To use it, you need to set the following variables:
-- `board`: a list of rows. If a piece can pass through a cell, mark it with a dot (`.`), otherwise use a hash symbol (`#`).
-- `pieces`: a dictionary of piece names and their coordinates. Write the coordinates as `(row, column)` using 0-based indexing.
-- `goals`: same as pieces, but for the destinations of the pieces.
+The solver (`solver.py` or `solver.cpp`) takes a puzzle as input and outputs a solution if one exists.
+
+The input is formatted as follows:
+
+* The first line contains the number of `rows`, `columns` and `colors`.
+* The next `rows` lines represent the puzzle grid. Each line contains `columns` characters, each representing a cell in the grid. A `.` represents an empty cell, and a `#` represents a blocked cell.
+* The next `colors` lines represent the color information. Each line contains the color name, followed by the starting row and column, then the goal row and column.
+
+For example, level 10 is represented as follows:
+
+```
+3 4 2
+#.#.
+....
+#...
+Green 2 3 1 1
+Orange 2 2 0 3
+```
 
 ## Performance
 
-For simple puzzles, solution is obtained almost instantly.
-For more harder puzzles, we recommend using [PyPy](https://www.pypy.org/) instead of CPython.
-The "Hard" puzzle below can be solved in about 2 minutes (on my machine using PyPy).
+For the puzzles in kuboble.com, solution is obtained almost instantly.
+The "very hard" puzzle below can be solved in about 2 minutes (using PyPy), or in about a minute (using the C++).
 
 ```
 A B C D . . . .
