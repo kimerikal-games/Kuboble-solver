@@ -26,7 +26,7 @@ Orange 2 2 0 3
 ## Performance
 
 For the puzzles in kuboble.com, solution is obtained almost instantly.
-The "very hard" puzzle below can be solved in about 2 minutes (using PyPy), or in about a minute (using the C++).
+The "very hard" puzzle below can be solved in about a minute (using PyPy or C++)
 
 ```
 A B C D . . . .

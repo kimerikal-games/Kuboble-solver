@@ -1,0 +1,14 @@
+1	B	Down
+2	A	Left
+3	B	Left
+4	A	Down
+5	B	Right
+6	A	Up
+7	C	Down
+8	A	Left
+9	A	Down
+10	C	Left
+11	B	Up
+12	C	Right
+13	B	Right
+Done: 13 steps

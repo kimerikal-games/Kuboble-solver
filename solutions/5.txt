@@ -1,0 +1,6 @@
+1	B	Down
+2	A	Left
+3	B	Left
+4	A	Down
+5	A	Left
+Done: 5 steps
